@@ -13,6 +13,17 @@ export default class View {
     /* html */
     text: `<p>is it a mammal?</p>`,
     choices: [
+      { name: "yes", node: this.questionTwo },
+      { name: "no", node: null },
+    ],
+  };
+
+  questionTwo = {
+    parent: this.questionOne,
+    title: "Question One",
+    /* html */
+    text: `<p>Is it a predator?</p>`,
+    choices: [
       { name: "yes", node: null },
       { name: "no", node: null },
     ],

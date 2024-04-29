@@ -10,7 +10,7 @@ class Controller {
   start() {
     // this.testMVC();
     this.view.createQuestion(this.view.questionOne);
-    this.model.registerButtonClicks();
+    this.registerButtonClicks();
   }
 
   testMVC() {
@@ -21,6 +21,25 @@ class Controller {
 
   testController() {
     console.log("JS Running");
+  }
+
+  registerButtonClicks() {
+    document.querySelector("main").addEventListener("click", userClicked);
+
+    function userClicked(event) {
+      const target = event.target;
+      //   console.log(target);
+
+      if (target.tagName === "BUTTON") {
+        buttonClicked(target);
+      }
+    }
+  }
+
+  buttonClicked(button) {
+    console.log(button);
+
+    button.parentElement.remove();
   }
 }
 
