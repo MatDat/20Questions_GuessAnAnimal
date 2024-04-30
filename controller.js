@@ -28,6 +28,7 @@ class Controller {
     }
   };
 
+  //TODO Lav dynamisk
   buttonClicked(button) {
     button.parentElement.remove();
 
