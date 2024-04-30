@@ -24,8 +24,4 @@ export default class Model {
       no: this.questionOneIncorrect,
     };
   }
-
-  testModel() {
-    console.log("Model Running");
-  }
 }

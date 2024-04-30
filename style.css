@@ -7,12 +7,17 @@ body {
   background-color: bisque;
   padding: 1em;
   font-size: 18px;
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  text-align: center;
 }
 h1 {
   color: darkred;
   text-transform: uppercase;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   margin-bottom: 1em;
+  width: 100%;
 }
 h2 {
   margin-bottom: 0.5em;
